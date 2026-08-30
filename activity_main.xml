@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp" android:background="#FAF8FF">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Kian AI" android:textSize="30sp" android:textStyle="bold"
+        android:gravity="center" android:textColor="#2A2035" android:padding="10dp"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="مساعدك الذكي" android:textSize="15sp" android:gravity="center"
+        android:textColor="#6F6678" android:paddingBottom="10dp"/>
+
+    <ScrollView android:id="@+id/scroll" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <TextView android:id="@+id/chat" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="مرحبًا 👋&#10;&#10;أنا Kian AI. اكتب سؤالك وسأساعدك."
+            android:textSize="17sp" android:textColor="#26212B" android:padding="12dp"/>
+    </ScrollView>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical">
+        <EditText android:id="@+id/input" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:minHeight="52dp" android:hint="اكتب رسالتك..." android:textSize="16sp"
+            android:inputType="textMultiLine" android:maxLines="5"/>
+        <Button android:id="@+id/send" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="إرسال"/>
+    </LinearLayout>
+</LinearLayout>
